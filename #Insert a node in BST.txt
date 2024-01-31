@@ -1,4 +1,4 @@
-#Insert a node in BST
+#Insert a node in BST(Binary Search Tree)
 
 
 class Node:
