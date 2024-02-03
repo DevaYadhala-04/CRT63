@@ -1,0 +1,61 @@
+Queue using array 4
+Problem
+Submissions
+Leaderboard
+Discussions
+Write a program to implement Queue using array.
+
+Input Format
+
+Read size of the queue Read elements line by line
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+print queue
+
+Sample Input 0
+
+5
+1
+2
+3
+4
+5
+Sample Output 0
+
+1 2 3 4 5
+Sample Input 1
+
+3
+23
+12
+55
+Sample Output 1
+
+23 12 55
+
+
+CODE:
+
+def enqueue(ele):
+    for x in ele: 
+        if len(q)==n:
+            print("queue is full")
+            return
+        q.append(x)
+def show():
+    if len(q)==0:
+        print("queue is empty")
+        return
+    for i in range(len(q)):
+        print(q[i],end=" ")
+    print()
+q=[]
+n=int(input())
+x=[int(input()) for i in range(n)]
+enqueue(x)
+show()
